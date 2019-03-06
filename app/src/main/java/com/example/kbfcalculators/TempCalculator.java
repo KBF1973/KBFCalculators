@@ -23,8 +23,8 @@ public class TempCalculator extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        inputF = findViewById(R.id.editFarhenheit);
-        inputC = findViewById(R.id.editCelcius);
+        inputF = findViewById(R.id.editFahrenheit);
+        inputC = findViewById(R.id.editCelsius);
 
         calculateTemps = findViewById(R.id.calTemp);
 
@@ -56,7 +56,7 @@ public class TempCalculator extends AppCompatActivity {
                 double celsius = Double.parseDouble(c);
                 double fahrenheit = ((celsius * 9 / 5) + 32);
 
-                ((EditText) findViewById(R.id.editFarhenheit)).setText(Double.toString(fahrenheit));
+                ((EditText) findViewById(R.id.editFahrenheit)).setText(Double.toString(fahrenheit));
 
             }
 
@@ -65,7 +65,7 @@ public class TempCalculator extends AppCompatActivity {
             double fahrenheit = Double.parseDouble(f);
             double celsius = ((fahrenheit - 32) * 5 / 9);
 
-            ((EditText) findViewById(R.id.editCelcius)).setText(Double.toString(celsius));
+            ((EditText) findViewById(R.id.editCelsius)).setText(Double.toString(celsius));
 
         }
     }

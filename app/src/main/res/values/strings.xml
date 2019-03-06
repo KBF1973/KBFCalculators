@@ -5,10 +5,23 @@
     <string name="title_activity_temp_calculator">TempCalculator</string>
     <string name="title_activity_distance_calculator">DistanceCalculator</string>
     <string name="fahrenheit">fahrenheit</string>
-    <string name="celcius">celcius</string>
-    <string name="calculate">Calculate</string>
+    <string name="calculate1">Calculate</string>
     <string name="tip_calculator">Tip Calculator</string>
     <string name="distance_calculator">Distance Calculator</string>
     <string name="temp_calculator">Temp Calculator</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="total_per_person">Total Per Person</string>
+    <string name="name1">Name</string>
+    <string name="number_of_people">Number of People</string>
+    <string name="name2">Name</string>
+    <string name="tip_percentage">Tip Percentage</string>
+    <string name="name3">Name</string>
+    <string name="calculate2">Calculate</string>
+    <string name="celsius">celsius</string>
+    <string name="miles">Miles</string>
+    <string name="name">Name</string>
+    <string name="kilometers">Kilometers</string>
+    <string name="calculate_distance">Calculate Distance</string>
 
 </resources>
