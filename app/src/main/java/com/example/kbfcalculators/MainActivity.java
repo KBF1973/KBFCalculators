@@ -28,14 +28,7 @@ public class MainActivity extends AppCompatActivity {
         temp = findViewById(R.id.tempButton);
         distance = findViewById(R.id.distanceButton);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
     }
 
     public void tipOnclick(View v){

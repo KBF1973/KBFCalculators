@@ -9,12 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import java.text.DecimalFormat;
 
 public class TempCalculator extends AppCompatActivity {
 
     EditText inputF;
     EditText inputC;
     Button calculateTemps;
+    DecimalFormat decimal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,15 +29,8 @@ public class TempCalculator extends AppCompatActivity {
         inputC = findViewById(R.id.editCelsius);
 
         calculateTemps = findViewById(R.id.calTemp);
+        decimal = new DecimalFormat("#.###");
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
@@ -56,7 +51,7 @@ public class TempCalculator extends AppCompatActivity {
                 double celsius = Double.parseDouble(c);
                 double fahrenheit = ((celsius * 9 / 5) + 32);
 
-                ((EditText) findViewById(R.id.editFahrenheit)).setText(Double.toString(fahrenheit));
+                ((EditText) findViewById(R.id.editFahrenheit)).setText(decimal.format(fahrenheit));
 
             }
 
@@ -65,7 +60,7 @@ public class TempCalculator extends AppCompatActivity {
             double fahrenheit = Double.parseDouble(f);
             double celsius = ((fahrenheit - 32) * 5 / 9);
 
-            ((EditText) findViewById(R.id.editCelsius)).setText(Double.toString(celsius));
+            ((EditText) findViewById(R.id.editCelsius)).setText(decimal.format(celsius));
 
         }
     }

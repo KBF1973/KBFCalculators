@@ -23,5 +23,6 @@
     <string name="name">Name</string>
     <string name="kilometers">Kilometers</string>
     <string name="calculate_distance">Calculate Distance</string>
+    <string name="click_calculate">Click Calculate</string>
 
 </resources>
